@@ -1,0 +1,122 @@
+$default-color: #3f3f3f;
+$background-Default: #e0e0e0;
+$shadow-color: #33333333;
+$primary: #3d5afe;
+$blue-100: #2962ff1a;
+$white-color: #ffffff;
+$text-disable: #9e9e9e;
+$secondary: #455a64;
+$danger: #d32f2f;
+$default-hover: #aeaeae;
+$secondary-hover: #1c313a;
+$primary-hover: #0039cb;
+$danger-hover: #9a0007;
+
+button {
+  gap: 0px;
+  margin: 20px;
+  border-radius: 6px;
+  background-color: $background-Default;
+  color: $default-color;
+  border: none;
+  font-family: Noto Sans JP;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.27px;
+  text-align: center;
+  box-shadow: 0px 2px 3px 0px $shadow-color;
+  transition: all 0.2s linear;
+  padding: 8px 16px;
+  cursor: pointer;
+  &.outline {
+    background-color: $white-color;
+    border: 1px solid $primary;
+    color: $primary;
+    box-shadow: unset;
+    &:hover,
+    &:focus {
+      background: $blue-100;
+    }
+  }
+  &.text {
+    background-color: $white-color;
+    border: none;
+    box-shadow: unset;
+    color: $primary;
+    &:hover,
+    &:focus {
+      background-color: $blue-100;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $default-hover;
+  }
+  &.disableShadow {
+    box-shadow: unset;
+
+    // pointer-events: none;
+  }
+  &.disable {
+    color: $text-disable;
+    pointer-events: none;
+  }
+
+  &.lg,
+  &.md,
+  &.sm,
+  &.local_grocery_store,
+  &.disableShadow {
+    background-color: #3d5afe;
+    color: white;
+  }
+  &.lg {
+    padding: 11px 22px;
+  }
+  &.sm {
+    padding: 6px 12px;
+  }
+  &.md {
+    padding: 8px 16px;
+  }
+  &.default {
+    background-color: $background-Default;
+    color: $default-color;
+    &:hover,
+    :focus {
+      background-color: $default-hover;
+    }
+  }
+  &.secondary {
+    background-color: $secondary;
+    color: $white-color;
+    &:hover,
+    :focus {
+      background-color: $secondary-hover;
+    }
+  }
+  &.primary {
+    background-color: $primary;
+    color: $white-color;
+    &:hover,
+    :focus {
+      background-color: $primary-hover;
+    }
+  }
+  &.danger {
+    background-color: $danger;
+    color: $white-color;
+    &:hover,
+    :focus {
+      background-color: $danger-hover;
+    }
+  }
+}
+.icon {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20.27px;
+  text-align: center;
+  padding: 0 5.35px;
+}
