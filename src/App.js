@@ -23,6 +23,9 @@ function App() {
       <Button color="primary">Default</Button>
       <Button color="secondary">Secondary</Button>
       <Button color="danger">Danger</Button>
+      <Button color="danger">Danger</Button>
+      <Button color="danger">Danger</Button>
+      <Button color="danger">Danger</Button>
     </div>
   );
 }
