@@ -1,0 +1,77 @@
+$default: #828282;
+$hover: #333333;
+$focus: #2962ff;
+$error: #d32f2f;
+
+.control {
+  position: relative;
+  label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17.38px;
+    text-align: left;
+    color: $default;
+  }
+  .icon {
+    position: absolute;
+    left: 10px; /* Điều chỉnh vị trí của icon tùy theo thiết kế */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input {
+    border: solid $default 1px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.27px;
+    text-align: left;
+    padding: 17px 12px;
+    color: $default;
+    border-radius: 8px;
+    outline: none;
+  }
+  &:hover {
+    label {
+      color: $hover;
+    }
+    input {
+      border-color: $hover;
+    }
+  }
+  &:focus-within {
+    label {
+      color: $focus;
+    }
+    input {
+      border-color: $focus;
+    }
+  }
+  &.error {
+    &:hover {
+      label {
+        color: $hover;
+      }
+      input {
+        border-color: $hover;
+      }
+    }
+    &:focus-within {
+      label {
+        color: $error;
+      }
+      input {
+        border-color: $error;
+      }
+    }
+  }
+  &.disable {
+    input {
+      pointer-events: none;
+      background-color: #f2f2f2;
+      border: solid 1px #e0e0e0;
+    }
+    label {
+      color: #333333;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Button from "./components/button/Button";
+import Input from "./components/input/Input";
 
 function App() {
   return (
@@ -23,6 +24,13 @@ function App() {
       <Button color="primary">Default</Button>
       <Button color="secondary">Secondary</Button>
       <Button color="danger">Danger</Button>
+
+      <Input control></Input>
+      <Input control error></Input>
+      <Input control disable></Input>
+      <Input control helperText="Some interesting text" error></Input>
+      <Input control startIcon></Input>
+      <Input control endIcon></Input>
     </div>
   );
 }
